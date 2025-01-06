@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: mission
-          image: 559050205062.dkr.ecr.us-east-1.amazonaws.com/frontend:latest # Image that will be used to containers in the cluster
+          image: 559050205062.dkr.ecr.us-east-1.amazonaws.com/frontend:${IMAGE_TAG} # Image that will be used to containers in the cluster
           imagePullPolicy: Always
           ports:
             - containerPort: 8080 # The port that the container is running on in the cluster
